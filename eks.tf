@@ -14,7 +14,7 @@ module "eks" {
   cluster_endpoint_private_access = false
 
   eks_managed_node_group_defaults = {
-    instance_type = "t3.micro"
+    instance_types = "t3.micro"
   }
 
   eks_managed_node_groups = {
