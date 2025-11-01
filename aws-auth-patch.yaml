@@ -8,11 +8,11 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::535002879962:role/default-eks-node-group-20250614233650666800000001
+      rolearn: arn:aws:iam::196061557748:role/default-eks-node-group-20250614233650666800000001
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
-    - userarn: arn:aws:iam::535002879962:user/atul
-      username: atul
+    - userarn: arn:aws:iam::196061557748:user/prerana karande
+      username: prerana karande
       groups:
         - system:masters
 
