@@ -4,8 +4,6 @@ metadata:
   name: aws-auth
   namespace: kube-system
 data:
-  
-
   mapRoles: |
   - rolearn: arn:aws:iam::196061557748:role/eksctl-my-eks-cluster-NodeInstanceRole-xxxx
     username: system:node:{{EC2PrivateDNSName}}
@@ -16,9 +14,6 @@ data:
     username: ec2-user
     groups:
       - system:masters
-
-
-  
   mapUsers: |
     - userarn: arn:aws:iam::196061557748:user/prerana karande
       username: prerana karande
